@@ -3,7 +3,7 @@
 		:class="['navbar-enhanced elevation-2 px-2 pb-1', rtlClasses, isRtl ? 'rtl-app-bar' : 'ltr-app-bar']"
 		:style="[rtlStyles, { flexDirection: isRtl ? 'row-reverse' : 'row' }]">
 		<!-- Brand Section (left in LTR, right in RTL) -->
-		<div :class="['navbar-brand-section', isRtl ? 'rtl-brand-section' : 'ltr-brand-section']">
+		<!-- <div :class="['navbar-brand-section', isRtl ? 'rtl-brand-section' : 'ltr-brand-section']">
 			<v-app-bar-nav-icon ref="navIcon" @click="$emit('nav-click')"
 				:class="['text-secondary nav-icon', isRtl ? 'rtl-nav-icon' : 'ltr-nav-icon']" />
 
@@ -16,25 +16,25 @@
 				<span class="font-weight-light navbar-title-light">{{ __("POS") }}</span><span
 					class="navbar-title-bold">{{ __("Awesome") }}</span>
 			</v-toolbar-title>
-		</div>
+		</div> -->
 
 		<v-spacer />
 
 		<!-- Actions Section (right in LTR, left in RTL) -->
 		<div :class="['navbar-actions-section', isRtl ? 'rtl-actions-section' : 'ltr-actions-section']">
 			<!-- Enhanced connectivity status indicator - Always visible -->
-			<slot name="status-indicator"></slot>
+			<!-- <slot name="status-indicator"></slot> -->
 
 			<!-- Cache Usage Meter -->
-			<slot name="cache-usage-meter"></slot>
+			<!-- <slot name="cache-usage-meter"></slot> -->
 
 			<!-- Database Usage Gadget -->
-			<slot name="db-usage-gadget"></slot>
+			<!-- <slot name="db-usage-gadget"></slot> -->
 
 			<!-- CPU Load Gadget -->
-			<slot name="cpu-gadget"></slot>
+			<!-- <slot name="cpu-gadget"></slot> -->
 
-			<div :class="['profile-section', isRtl ? 'rtl-profile-section' : 'ltr-profile-section']">
+			<!-- <div :class="['profile-section', isRtl ? 'rtl-profile-section' : 'ltr-profile-section']">
 				<v-chip color="primary" variant="outlined"
 					:class="['profile-chip', isRtl ? 'rtl-profile-chip' : 'ltr-profile-chip']">
 					<v-icon :start="!isRtl" :end="isRtl" :class="isRtl ? 'rtl-profile-icon' : 'ltr-profile-icon'">
@@ -44,7 +44,7 @@
 						{{ displayName }}
 					</span>
 				</v-chip>
-			</div>
+			</div> -->
 
 			<v-btn icon color="primary"
 				:class="['offline-invoices-btn', isRtl ? 'rtl-offline-btn' : 'ltr-offline-btn', { 'has-pending': pendingInvoices > 0 }]"
